@@ -1,1 +1,1 @@
-# fe-ecomerce-shop-btl-tmdt
+# ecommerce-shop-starter
