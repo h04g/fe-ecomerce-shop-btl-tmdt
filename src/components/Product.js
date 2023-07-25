@@ -6,6 +6,10 @@ import { BsPlus, BsEyeFill } from 'react-icons/bs';
 // import cart context
 import { CartContext } from '../contexts/CartContext'
 
+import productImg from '../img/a.jpg'
+
+
+
 const Product = ({ product }) => {
 
   const { addToCart } = useContext(CartContext)
@@ -20,7 +24,7 @@ const Product = ({ product }) => {
           <div className='w-[200px] mx-auto flex justify-center items-center'>
             <img
               className='max-h-[160px] group-hover:scale-110 transition duration-300'
-              src={image}
+              src={productImg}
               alt=''
             />
           </div>

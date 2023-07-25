@@ -9,6 +9,8 @@ import {IoMdAdd, IoMdClose, IoMdRemove} from 'react-icons/io'
 //import cart context 
 import { CartContext } from '../contexts/CartContext';
 
+import productImg from '../img/a.jpg'
+
 const CartItem = ({item} ) => {
   const { removeFromCart, increaseAmount, decreaseAmount } = useContext(CartContext)
   const {id, title, image, price, amount } = item
@@ -16,7 +18,7 @@ const CartItem = ({item} ) => {
     <div className='w-full min-h-[150px] flex items-center gap-x-4 py-2 lg:px-6 border-b border-gray-200 w-full font-light text-gray-500  '>
       {/*image*/}
       <Link to={`/product/${id}`}>
-        <img className='max-w-[80px] ' src={image} alt=''/>
+        <img className='max-w-[80px] ' src={productImg} alt=''/>
       </Link>
       <div className='w-full flex flex-col'>
         {/*title and remove icon */}

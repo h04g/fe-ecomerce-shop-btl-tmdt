@@ -13,7 +13,7 @@ const ProductProvider = ({ children }) => {
     };
     fetchProducts();
   },[])
-  return <ProductContext.Provider value={{ products }}>{children}</ProductContext.Provider>;
+  return <ProductContext.Provider value={{ products, setProducts }}>{children}</ProductContext.Provider>;
 };
 
 export default ProductProvider;

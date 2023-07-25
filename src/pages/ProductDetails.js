@@ -2,6 +2,7 @@ import React, {useContext} from 'react';
 import {useParams} from 'react-router-dom'
 import { CartContext } from '../contexts/CartContext';
 import { ProductContext } from '../contexts/ProductContext';
+import productImg from '../img/a.jpg'
 
 const ProductDetails = () => {
   //get the product id from the url
@@ -29,7 +30,7 @@ const ProductDetails = () => {
         <div className='flex flex-col lg:flex-row'>
           {/* image */}
           <div className='flex flex-1 justify-center items-center mb-8 lg:mb-0'>
-            <img className='max-w-[200px] lg:max-w-sm' src={image} />
+            <img className='max-w-[200px] lg:max-w-sm' src={productImg} />
           </div>
           {/* text */}
           <div className='flex-1 text-center lg:text-left'>
